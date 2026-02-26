@@ -1,0 +1,4 @@
+interface:
+  display_name: "Investigator"
+  short_description: "Conduct an in-depth investigation of the topic and save it to $PWD/docs/notes"
+  default_prompt: "Use $investigator to investigate the given topic deeply in this repository and save the report under $PWD/docs/notes with a yyyy-MM-dd filename prefix."
