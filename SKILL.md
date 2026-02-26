@@ -27,14 +27,13 @@ Create a detailed markdown research report for a user-provided topic and save it
 4. Synthesize findings into a structured report.
 5. Save the report file to `$PWD/docs/notes/` and cite all sources.
 
-## File Creation
+## Guardrail
 
-Create the destination path and template with:
+- Do not jump into implementation or edit source code after the investigation is complete.
 
-```bash
-python $HOME/.codex/skills/investigator/scripts/create_note.py "<topic>"
-```
+## File Creation and Management
 
+Create the destination path and template with: `$HOME/.codex/skills/investigator/references/TEMPLATE.md` and save the filled report to `$PWD/docs/notes/yyyy-MM-dd_*.md`. Always use the `yyyy-MM-dd_` prefix for filenames. Do not include local paths or environment-specific information in the report; use placeholders like `$PWD` instead. 
 This prints the final path and creates a draft markdown file if it does not exist.
 
 ## Local Investigation Checklist
